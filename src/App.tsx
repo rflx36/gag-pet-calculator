@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import TextGAG from "./components/text";
 import ContainerGAG from "./components/container";
 import InputGAG from "./components/inputs";
-import App2 from "./App2";
+// import App2 from "./App2";
 import findWeightRange from "./utils/findWeightRange";
 
 
@@ -12,7 +12,8 @@ function App() {
 
     const [currentWeight, setCurrentWeight] = useState(1);
     const [currentAge, setCurrentAge] = useState(1);
-    const [enableExperimental, setEnableExperimental] = useState(true);
+    // const [enableExperimental, setEnableExperimental] = useState(true);
+    const enableExperimental = true;
 
     const [dampening, setDampening] = useState(11);
     const [baseWeight, setBaseWeight] = useState<CalculationResultType>(-1);
@@ -27,9 +28,9 @@ function App() {
         setBaseWeight(result)
     }
 
-    const toTruncate = (value: number) => {
-        return parseInt((value * 100).toString()) / 100;
-    }
+    // const toTruncate = (value: number) => {
+    //     return parseInt((value * 100).toString()) / 100;
+    // }
 
     return (
         <>
