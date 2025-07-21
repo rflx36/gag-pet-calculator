@@ -12,7 +12,7 @@ function ContainerGAG({ variants = "external", className, children }: ContainerG
     const containerStyleVariants = {
         external: "bg-[#3D1A0A]",
         internal: "bg-[#714227]",
-        glass: "bg-[#3D1A0A]/50 "
+        glass: "bg-[#714227]/50 "
     }
 
 

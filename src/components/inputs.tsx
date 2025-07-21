@@ -52,7 +52,7 @@ function InputGAG({
     const input_value = (valid) ? value : 0;
 
     return (
-        <div className={`relative h-[3.75rem] pl-2 group bg-[#714227]  border-2 border-black/50  w-full shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.5)] ${isFocused ? " border-blue-400" : ""}`}>
+        <div className={`relative h-full pl-2 group bg-[#714227]  border-2 border-black/50 overflow-hidden w-full shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.5)] ${isFocused ? " border-blue-400" : ""}`}>
             <div className="absolute top-0 font-comic w-full h-full">
 
                 <input
@@ -64,7 +64,7 @@ function InputGAG({
                     max={max}
                     onFocus={() => setIsFocued(true)}
                     onBlur={() => setIsFocued(false)}
-                    className={`input-style text-2xl w-full h-full  text-transparent ` + className}
+                    className={`input-style text-2xl select-none text-high w-full h-full  text-transparent overflow-hidden ` + className}
                 />
                 <div className="absolute top-2 select-none pointer-events-none">
                     <p className={`text-2xl text-white  relative z-20 ${textClassName}`}>{display_value} {concatValue}</p>

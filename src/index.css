@@ -7,14 +7,6 @@
     font-style: normal;
 }
 
-/* 
-@font-face {
-  font-family: 'Comic Neue';
-  src: url('fonts/ComicNeue-Angular-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-} */
-
 .font-comic {
     font-family: 'Comic Neue', sans-serif;
 }
